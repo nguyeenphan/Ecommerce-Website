@@ -1,6 +1,7 @@
 .hero {
-    height: 100vh;
+    height: 90vh;
     display: flex;
+    margin-bottom: 10vh;
 }
 
 .hero-left {
@@ -15,8 +16,8 @@
 
 .hero-left h2 {
     color: #090909;
-    font-family: 26px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 400;
 }
 
 .hero-left p {
@@ -48,6 +49,7 @@
     color: white;
     font-size: 22px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .hero-right {
@@ -59,5 +61,5 @@
 }
 
 .hero-right img {
-    width: 500px;
+    height: 95%;
 }

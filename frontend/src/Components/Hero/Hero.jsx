@@ -8,7 +8,7 @@ function Hero(props) {
     return (
         <div className='hero'>
             <div className='hero-left'>
-                <h2>NEW ARRIVALS ONLY</h2>
+                {/*<h2>NEW ARRIVALS ONLY</h2>*/}
                 <div>
                     <div className='hero-hand-icon'>
                         <p>new</p>

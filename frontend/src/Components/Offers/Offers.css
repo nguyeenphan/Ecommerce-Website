@@ -1,11 +1,12 @@
 .offers {
-    width: 65%;
+    width: 75%;
     height: 60vh;
     display: flex;
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg, #B03052, #f3f3f3 60%);
+    background: linear-gradient(270deg , #789DBC 60%, #F9F9F9 100%); ;
+    border-radius: 3px 100px 3px 100px;
 }
 
 .offers-left {
@@ -43,7 +44,12 @@
 .offers-right {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     padding-top: 50px;
+}
+
+.offers-right img {
+    width: 375px;
+    height: 60vh;
 }
