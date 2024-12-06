@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import './CartItems.css';
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from '../Assets/cart_cross_icon.png';
+import add_icon from  '../Assets/add_icon.png';
+import minus_icon from  '../Assets/minus_icon.png';
 
 function CartItems(props) {
-    const { getTotalCartAmount, all_product, cartItems, addToCart, removeToCart } = useContext(ShopContext);
+    const { getTotalCartAmount, all_product, cartItems, addToCart, removeToCart, minusItems } = useContext(ShopContext);
     return (
         <div className='cartitems'>
             <div className='cartitems-format-head'>
@@ -24,7 +26,11 @@ function CartItems(props) {
                                 <img src={e.image} alt='' className='carticon-product-icon' />
                                 <p>{e.name}</p>
                                 <p>${e.new_price}</p>
-                                <button className='cartitems-quantity'>{cartItems[e.id]}</button>
+                                <div className='quantity'>
+                                    <img src={minus_icon} alt='' className='quantity-icon' onClick={() => { minusItems(e.id) }}/>
+                                    <button className='cartitems-quantity'>{cartItems[e.id]}</button>
+                                    <img src={add_icon} alt='' className='quantity-icon'onClick={() => { addToCart(e.id) }}/>
+                                </div>
                                 <p>${e.new_price * cartItems[e.id]}</p>
                                 <img className='cartitems-remove-icon' src={remove_icon} onClick={() => { removeToCart(e.id) }} alt='' />
                             </div>
