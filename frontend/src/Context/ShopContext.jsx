@@ -1,6 +1,5 @@
 import React, {createContext, useState} from "react";
 import all_product from "../Components/Assets/all_product";
-import product from "../Pages/Product";
 
 export const ShopContext = createContext(null);
 
